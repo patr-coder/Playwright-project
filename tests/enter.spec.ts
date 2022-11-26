@@ -9,7 +9,7 @@ import UrlLink from "../Pages/Url";
 const Email = "patrick@9-op.org";
 const Password = "password";
 test.describe("Application Form", function(){
-    test.skip("Apply for first time formality", async ({page,baseURL})=>{           
+    test("Apply for first time formality", async ({page,baseURL})=>{           
         // const link = new UrlLink(page)  
         // await link.UrlPage1(`${baseURL}route=account/register`)   
         await page.goto(`${baseURL}route=account/register`); 
