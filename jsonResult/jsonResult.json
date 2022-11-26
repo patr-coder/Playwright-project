@@ -36,19 +36,6 @@
           "**.spec.ts"
         ],
         "timeout": 30000
-      },
-      {
-        "outputDir": "/Users/Patrick/Desktop/Playwright/test-results",
-        "repeatEach": 1,
-        "retries": 0,
-        "id": "webkit",
-        "name": "webkit",
-        "testDir": "/Users/Patrick/Desktop/Playwright",
-        "testIgnore": [],
-        "testMatch": [
-          "**.spec.ts"
-        ],
-        "timeout": 30000
       }
     ],
     "reporter": [
@@ -97,7 +84,7 @@
           "column": 6,
           "specs": [
             {
-              "title": "Apply for first time formality",
+              "title": "Access In ",
               "ok": true,
               "tags": [],
               "tests": [
@@ -111,55 +98,12 @@
                     {
                       "workerIndex": 0,
                       "status": "passed",
-                      "duration": 9516,
+                      "duration": 5657,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2022-11-26T08:50:59.707Z",
-                      "attachments": [
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "/Users/Patrick/Desktop/Playwright/test-results/tests-enter-Application-Form-Apply-for-first-time-formality-chromium/video.webm"
-                        },
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "/Users/Patrick/Desktop/Playwright/test-results/tests-enter-Application-Form-Apply-for-first-time-formality-chromium/test-finished-1.png"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "9bfdc1e34a346b58c253-c362ac7eacb6bc00e2b7",
-              "file": "tests/enter.spec.ts",
-              "line": 12,
-              "column": 5
-            },
-            {
-              "title": "Access In ",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "status": "passed",
-                      "duration": 7452,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2022-11-26T08:50:59.705Z",
+                      "startTime": "2022-11-26T13:24:20.479Z",
                       "attachments": [
                         {
                           "name": "video",
@@ -180,49 +124,6 @@
               "id": "9bfdc1e34a346b58c253-892e4f646d4c6734c806",
               "file": "tests/enter.spec.ts",
               "line": 28,
-              "column": 5
-            },
-            {
-              "title": "Access in Side",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 2,
-                      "status": "passed",
-                      "duration": 10242,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2022-11-26T08:50:59.713Z",
-                      "attachments": [
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "/Users/Patrick/Desktop/Playwright/test-results/tests-enter-Application-Form-Access-in-Side-chromium/video.webm"
-                        },
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "/Users/Patrick/Desktop/Playwright/test-results/tests-enter-Application-Form-Access-in-Side-chromium/test-finished-1.png"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "9bfdc1e34a346b58c253-a203f033330c0c89f6ac",
-              "file": "tests/enter.spec.ts",
-              "line": 41,
               "column": 5
             }
           ]
