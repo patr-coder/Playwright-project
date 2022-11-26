@@ -1,0 +1,27 @@
+{
+  "name": "playwright",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patr-coder/Playwright-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/patr-coder/Playwright-project/issues"
+  },
+  "homepage": "https://github.com/patr-coder/Playwright-project#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.28.1",
+    "@typescript-eslint/parser": "^5.44.0",
+    "eslint": "^8.28.0",
+    "typescript": "^4.9.3"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.44.0"
+  }
+}
