@@ -6,7 +6,7 @@ import DashboardPage from "../Pages/Dashboard";
 import UrlLink from "../Pages/Url";
 
 
-const Email = "patrick@count-op.org";
+const Email = "patrick@counts-op.org";
 const Password = "password";
 test.describe("Application Form", function(){
     test("Apply for first time formality", async ({page,baseURL})=>{           
@@ -37,8 +37,8 @@ test.describe("Application Form", function(){
         await time.Time()
         
     })
-    test.only("Access in Side",async({page,baseURL})=>{           
-        const url = new UrlLink(page)
+    test("Access in Side",async({page,baseURL})=>{           
+        // const url = new UrlLink(page)
         const access = new AccessPage(page)
         const add = new AddBasketPage(page)
         const dashboard = new DashboardPage(page)
