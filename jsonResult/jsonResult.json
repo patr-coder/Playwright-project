@@ -84,7 +84,7 @@
           "column": 6,
           "specs": [
             {
-              "title": "Access In ",
+              "title": "Apply for first time formality",
               "ok": true,
               "tags": [],
               "tests": [
@@ -98,12 +98,55 @@
                     {
                       "workerIndex": 0,
                       "status": "passed",
-                      "duration": 6819,
+                      "duration": 6407,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2022-11-26T13:42:18.227Z",
+                      "startTime": "2022-12-03T18:14:26.315Z",
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/Patrick/Desktop/Playwright/test-results/tests-enter-Application-Form-Apply-for-first-time-formality-chromium/video.webm"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/Patrick/Desktop/Playwright/test-results/tests-enter-Application-Form-Apply-for-first-time-formality-chromium/test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9bfdc1e34a346b58c253-c362ac7eacb6bc00e2b7",
+              "file": "tests/enter.spec.ts",
+              "line": 12,
+              "column": 5
+            },
+            {
+              "title": "Access In ",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "status": "passed",
+                      "duration": 6539,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2022-12-03T18:14:26.314Z",
                       "attachments": [
                         {
                           "name": "video",
@@ -124,7 +167,7 @@
               "id": "9bfdc1e34a346b58c253-892e4f646d4c6734c806",
               "file": "tests/enter.spec.ts",
               "line": 28,
-              "column": 10
+              "column": 5
             },
             {
               "title": "Access in Side",
@@ -139,14 +182,14 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
+                      "workerIndex": 2,
                       "status": "passed",
-                      "duration": 10370,
+                      "duration": 8979,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2022-11-26T13:42:18.227Z",
+                      "startTime": "2022-12-03T18:14:26.314Z",
                       "attachments": [
                         {
                           "name": "video",
@@ -167,7 +210,7 @@
               "id": "9bfdc1e34a346b58c253-a203f033330c0c89f6ac",
               "file": "tests/enter.spec.ts",
               "line": 40,
-              "column": 10
+              "column": 5
             }
           ]
         }
