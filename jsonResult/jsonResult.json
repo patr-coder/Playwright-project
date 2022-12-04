@@ -80,7 +80,7 @@
         {
           "title": "Application Form",
           "file": "tests/enter.spec.ts",
-          "line": 11,
+          "line": 10,
           "column": 6,
           "specs": [
             {
@@ -90,41 +90,34 @@
               "tests": [
                 {
                   "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
+                  "annotations": [
+                    {
+                      "type": "skip"
+                    }
+                  ],
+                  "expectedStatus": "skipped",
                   "projectId": "chromium",
                   "projectName": "chromium",
                   "results": [
                     {
                       "workerIndex": 0,
-                      "status": "passed",
-                      "duration": 6407,
+                      "status": "skipped",
+                      "duration": 2,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2022-12-03T18:14:26.315Z",
-                      "attachments": [
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "/Users/Patrick/Desktop/Playwright/test-results/tests-enter-Application-Form-Apply-for-first-time-formality-chromium/video.webm"
-                        },
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "/Users/Patrick/Desktop/Playwright/test-results/tests-enter-Application-Form-Apply-for-first-time-formality-chromium/test-finished-1.png"
-                        }
-                      ]
+                      "startTime": "2022-12-04T10:54:55.819Z",
+                      "attachments": []
                     }
                   ],
-                  "status": "expected"
+                  "status": "skipped"
                 }
               ],
               "id": "9bfdc1e34a346b58c253-c362ac7eacb6bc00e2b7",
               "file": "tests/enter.spec.ts",
-              "line": 12,
-              "column": 5
+              "line": 11,
+              "column": 8
             },
             {
               "title": "Access In ",
@@ -141,12 +134,12 @@
                     {
                       "workerIndex": 1,
                       "status": "passed",
-                      "duration": 6539,
+                      "duration": 8230,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2022-12-03T18:14:26.314Z",
+                      "startTime": "2022-12-04T10:54:55.823Z",
                       "attachments": [
                         {
                           "name": "video",
@@ -166,8 +159,8 @@
               ],
               "id": "9bfdc1e34a346b58c253-892e4f646d4c6734c806",
               "file": "tests/enter.spec.ts",
-              "line": 28,
-              "column": 5
+              "line": 30,
+              "column": 3
             },
             {
               "title": "Access in Side",
@@ -184,12 +177,12 @@
                     {
                       "workerIndex": 2,
                       "status": "passed",
-                      "duration": 8979,
+                      "duration": 11176,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2022-12-03T18:14:26.314Z",
+                      "startTime": "2022-12-04T10:54:55.819Z",
                       "attachments": [
                         {
                           "name": "video",
@@ -209,8 +202,8 @@
               ],
               "id": "9bfdc1e34a346b58c253-a203f033330c0c89f6ac",
               "file": "tests/enter.spec.ts",
-              "line": 40,
-              "column": 5
+              "line": 44,
+              "column": 3
             }
           ]
         }

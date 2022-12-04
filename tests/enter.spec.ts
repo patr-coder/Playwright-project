@@ -5,14 +5,16 @@ import ApplyPage from "../Pages/Apply";
 import DashboardPage from "../Pages/Dashboard";
 import UrlLink from "../Pages/Url";
 
-const Email = "patrick@counts-op.org";
+const Email = "patrick@counts-opr.org";
 const Password = "password";
 test.describe("Application Form", function () {
-  test("Apply for first time formality", async ({ page, baseURL }) => {
-    // const link = new UrlLink(page)
-    // await link.UrlPage1(`${baseURL}route=account/register`)
-    await page.goto(`${baseURL}route=account/register`);
+  test.skip("Apply for first time formality", async ({ page, baseURL }) => {
+    
+    // await page.goto(`${baseURL}route=account/register`);
+    const RegisterLink = new UrlLink(page)
     const apply = new ApplyPage(page);
+
+    await RegisterLink.LinkRegister();
     await apply.typeFirstName("Patrick");
     await apply.typeRenterName("roboco-op");
     await apply.typeEmail(Email);
@@ -24,10 +26,15 @@ test.describe("Application Form", function () {
     await apply.Validate();
     await apply.Time();
   });
+
   test("Access In ", async ({ page, baseURL }) => {
+
+     // await page.goto(`${baseURL}route=account/login`);
     const time = new ApplyPage(page);
     const access = new AccessPage(page);
-    await page.goto(`${baseURL}route=account/login`);
+    const LoginLink = new UrlLink(page)
+
+    await LoginLink.LinkLogin()
     await access.TypeEmail(Email);
     await access.TypePassword(Password);
     await access.LoginButton();
@@ -35,11 +42,14 @@ test.describe("Application Form", function () {
     await time.Time();
   });
   test("Access in Side", async ({ page, baseURL }) => {
-    // const url = new UrlLink(page)
+    
+    // await page.goto(`${baseURL}route=account/login`);
     const access = new AccessPage(page);
     const add = new AddBasketPage(page);
     const dashboard = new DashboardPage(page);
-    await page.goto(`${baseURL}route=account/login`);
+    const Link = new UrlLink(page)
+
+    await Link.LinkLogin();
     await access.Login(Email, Password);
     await dashboard.goToMenu();
     await add.add();

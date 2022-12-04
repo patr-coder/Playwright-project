@@ -7,4 +7,10 @@ export default class UrlLink {
   async UrlPage1(url: string) {
     return await this.page.goto(url);
   }
+  async LinkRegister(){
+    return await this.page.goto("https://ecommerce-playground.lambdatest.io/index.php?route=account/register")
+  }
+  async LinkLogin(){
+    return await this.page.goto("https://ecommerce-playground.lambdatest.io/index.php?route=account/login")
+  }
 }
