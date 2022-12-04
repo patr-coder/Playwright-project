@@ -90,6 +90,49 @@
               "tests": [
                 {
                   "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 6762,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2022-12-04T12:15:31.355Z",
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/Patrick/Desktop/Playwright/test-results/tests-enter-Application-Form-Apply-for-first-time-formality-chromium/video.webm"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/Patrick/Desktop/Playwright/test-results/tests-enter-Application-Form-Apply-for-first-time-formality-chromium/test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9bfdc1e34a346b58c253-c362ac7eacb6bc00e2b7",
+              "file": "tests/enter.spec.ts",
+              "line": 11,
+              "column": 3
+            },
+            {
+              "title": "Access In ",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
                   "annotations": [
                     {
                       "type": "skip"
@@ -100,67 +143,24 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
+                      "workerIndex": 1,
                       "status": "skipped",
-                      "duration": 2,
+                      "duration": 1,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2022-12-04T10:54:55.819Z",
+                      "startTime": "2022-12-04T12:15:31.355Z",
                       "attachments": []
                     }
                   ],
                   "status": "skipped"
                 }
               ],
-              "id": "9bfdc1e34a346b58c253-c362ac7eacb6bc00e2b7",
-              "file": "tests/enter.spec.ts",
-              "line": 11,
-              "column": 8
-            },
-            {
-              "title": "Access In ",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "status": "passed",
-                      "duration": 8230,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2022-12-04T10:54:55.823Z",
-                      "attachments": [
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "/Users/Patrick/Desktop/Playwright/test-results/tests-enter-Application-Form-Access-In--chromium/video.webm"
-                        },
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "/Users/Patrick/Desktop/Playwright/test-results/tests-enter-Application-Form-Access-In--chromium/test-finished-1.png"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
               "id": "9bfdc1e34a346b58c253-892e4f646d4c6734c806",
               "file": "tests/enter.spec.ts",
-              "line": 30,
-              "column": 3
+              "line": 31,
+              "column": 8
             },
             {
               "title": "Access in Side",
@@ -169,41 +169,34 @@
               "tests": [
                 {
                   "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
+                  "annotations": [
+                    {
+                      "type": "skip"
+                    }
+                  ],
+                  "expectedStatus": "skipped",
                   "projectId": "chromium",
                   "projectName": "chromium",
                   "results": [
                     {
                       "workerIndex": 2,
-                      "status": "passed",
-                      "duration": 11176,
+                      "status": "skipped",
+                      "duration": 1,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2022-12-04T10:54:55.819Z",
-                      "attachments": [
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "/Users/Patrick/Desktop/Playwright/test-results/tests-enter-Application-Form-Access-in-Side-chromium/video.webm"
-                        },
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "/Users/Patrick/Desktop/Playwright/test-results/tests-enter-Application-Form-Access-in-Side-chromium/test-finished-1.png"
-                        }
-                      ]
+                      "startTime": "2022-12-04T12:15:31.359Z",
+                      "attachments": []
                     }
                   ],
-                  "status": "expected"
+                  "status": "skipped"
                 }
               ],
               "id": "9bfdc1e34a346b58c253-a203f033330c0c89f6ac",
               "file": "tests/enter.spec.ts",
-              "line": 44,
-              "column": 3
+              "line": 45,
+              "column": 8
             }
           ]
         }
