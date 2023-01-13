@@ -26,7 +26,8 @@ test.describe("Application Form", function () {
 
   test("Access In ", async ({ page, baseURL }) => {
 
-     await page.goto(`${baseURL}route=account/login`);
+    await page.goto("https://ecommerce-playground.lambdatest.io/index.php?route=account/login")
+    // await page.goto(`${baseURL}route=account/login`);
     const time = new ApplyPage(page);
     const access = new AccessPage(page);
     const LoginLink = new UrlLink(page)
@@ -42,8 +43,8 @@ test.describe("Application Form", function () {
     // await time.Time();
   });
   test("Access in Side", async ({ page, baseURL }) => {
-    
-    await page.goto(`${baseURL}route=account/login`);
+    await page.goto("https://ecommerce-playground.lambdatest.io/index.php?route=account/login")
+    // await page.goto(`${baseURL}route=account/login`);
     const access = new AccessPage(page);
     const add = new AddBasketPage(page);
     const dashboard = new DashboardPage(page);
