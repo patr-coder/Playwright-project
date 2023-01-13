@@ -84,7 +84,7 @@
           "column": 6,
           "specs": [
             {
-              "title": "Apply for first time formality",
+              "title": "Access in Side",
               "ok": true,
               "tags": [],
               "tests": [
@@ -98,22 +98,22 @@
                     {
                       "workerIndex": 0,
                       "status": "passed",
-                      "duration": 6762,
+                      "duration": 8295,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2022-12-04T12:15:31.355Z",
+                      "startTime": "2023-01-13T15:34:27.205Z",
                       "attachments": [
                         {
                           "name": "video",
                           "contentType": "video/webm",
-                          "path": "/Users/Patrick/Desktop/Playwright/test-results/tests-enter-Application-Form-Apply-for-first-time-formality-chromium/video.webm"
+                          "path": "/Users/Patrick/Desktop/Playwright/test-results/tests-enter-Application-Form-Access-in-Side-chromium/video.webm"
                         },
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "/Users/Patrick/Desktop/Playwright/test-results/tests-enter-Application-Form-Apply-for-first-time-formality-chromium/test-finished-1.png"
+                          "path": "/Users/Patrick/Desktop/Playwright/test-results/tests-enter-Application-Form-Access-in-Side-chromium/test-finished-1.png"
                         }
                       ]
                     }
@@ -121,81 +121,9 @@
                   "status": "expected"
                 }
               ],
-              "id": "9bfdc1e34a346b58c253-c362ac7eacb6bc00e2b7",
-              "file": "tests/enter.spec.ts",
-              "line": 11,
-              "column": 3
-            },
-            {
-              "title": "Access In ",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [
-                    {
-                      "type": "skip"
-                    }
-                  ],
-                  "expectedStatus": "skipped",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "status": "skipped",
-                      "duration": 1,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2022-12-04T12:15:31.355Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "skipped"
-                }
-              ],
-              "id": "9bfdc1e34a346b58c253-892e4f646d4c6734c806",
-              "file": "tests/enter.spec.ts",
-              "line": 31,
-              "column": 8
-            },
-            {
-              "title": "Access in Side",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [
-                    {
-                      "type": "skip"
-                    }
-                  ],
-                  "expectedStatus": "skipped",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 2,
-                      "status": "skipped",
-                      "duration": 1,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2022-12-04T12:15:31.359Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "skipped"
-                }
-              ],
               "id": "9bfdc1e34a346b58c253-a203f033330c0c89f6ac",
               "file": "tests/enter.spec.ts",
-              "line": 45,
+              "line": 44,
               "column": 8
             }
           ]
