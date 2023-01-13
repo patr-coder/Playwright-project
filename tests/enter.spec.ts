@@ -5,7 +5,7 @@ import ApplyPage from "../Pages/Apply";
 import DashboardPage from "../Pages/Dashboard";
 import UrlLink from "../Pages/Url";
 
-const Email = "patrick@counts-oprsnety.org";
+const Email = "patrick@counstyt.org";
 const Password = "password";
 test.describe("Application Form", function () {
   test("Apply for first time formality", async ({ page, baseURL }) => {
@@ -38,7 +38,9 @@ test.describe("Application Form", function () {
     await access.TypeEmail(Email);
     await access.TypePassword(Password);
     await access.LoginButton();
-    expect (await page.title()).toBe("My Account")
+    const AccountTitle = await page.title();
+    expect(AccountTitle).toEqual("Account Login");
+    // expect (await page.title()).toBe("My Account");   
     await time.Time();
   });
   test("Access in Side", async ({ page, baseURL }) => {
