@@ -5,7 +5,7 @@ import ApplyPage from "../Pages/Apply";
 import DashboardPage from "../Pages/Dashboard";
 import UrlLink from "../Pages/Url";
 
-const Email = "patrick@counts-oprsnet.org";
+const Email = "patrick@counts-oprsnety.org";
 const Password = "password";
 test.describe("Application Form", function () {
   test("Apply for first time formality", async ({ page, baseURL }) => {
@@ -41,7 +41,7 @@ test.describe("Application Form", function () {
     expect (await page.title()).toBe("My Account")
     await time.Time();
   });
-  test.only("Access in Side", async ({ page, baseURL }) => {
+  test("Access in Side", async ({ page, baseURL }) => {
     
     await page.goto(`${baseURL}route=account/login`);
     const access = new AccessPage(page);
