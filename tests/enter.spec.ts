@@ -5,13 +5,14 @@ import ApplyPage from "../Pages/Apply";
 import DashboardPage from "../Pages/Dashboard";
 import UrlLink from "../Pages/Url";
 
-const Email = "patrick@counstyt.org";
+const Email = "patrick@200009.org";
 const Password = "password";
-test.describe("Application Form", function () {
+// test.describe("Application Form", function () {
   test("Apply for first time formality", async ({ page, baseURL }) => {
    
     const apply = new ApplyPage(page);
-    await page.goto("https://ecommerce-playground.lambdatest.io/index.php?route=account/register")
+    // await page.goto("https://ecommerce-playground.lambdatest.io/index.php?route=account/register")
+    await page.goto(`${baseURL}route=account/register`);
     await apply.typeFirstName("Patrick");
     await apply.typeRenterName("roboco-op");
     await apply.typeEmail(Email);
@@ -26,8 +27,8 @@ test.describe("Application Form", function () {
 
   test("Access In ", async ({ page, baseURL }) => {
 
-    await page.goto("https://ecommerce-playground.lambdatest.io/index.php?route=account/login")
-    // await page.goto(`${baseURL}route=account/login`);
+    // await page.goto("https://ecommerce-playground.lambdatest.io/index.php?route=account/login")
+    await page.goto(`${baseURL}route=account/login`);
     const time = new ApplyPage(page);
     const access = new AccessPage(page);
     const LoginLink = new UrlLink(page)
@@ -37,14 +38,14 @@ test.describe("Application Form", function () {
     await access.TypePassword(Password);
     await access.LoginButton();
     const AccountTitle = await page.title();
-    expect(AccountTitle).toEqual("Account Login");
+    expect(AccountTitle).toBe("My Account"); 
     // expect (await page.title()).toBe("My Account"); 
     await page.waitForTimeout(5000);
     // await time.Time();
   });
   test("Access in Side", async ({ page, baseURL }) => {
-    await page.goto("https://ecommerce-playground.lambdatest.io/index.php?route=account/login")
-    // await page.goto(`${baseURL}route=account/login`);
+    // await page.goto("https://ecommerce-playground.lambdatest.io/index.php?route=account/login")
+    await page.goto(`${baseURL}route=account/account`);
     const access = new AccessPage(page);
     const add = new AddBasketPage(page);
     const dashboard = new DashboardPage(page);
@@ -57,4 +58,4 @@ test.describe("Application Form", function () {
     const CartVisible = await add.isVisible();
     await expect(CartVisible).toBeVisible();
   });
-});
+// });
