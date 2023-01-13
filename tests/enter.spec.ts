@@ -9,10 +9,7 @@ const Email = "patrick@counstyt.org";
 const Password = "password";
 test.describe("Application Form", function () {
   test("Apply for first time formality", async ({ page, baseURL }) => {
-    
-    // await page.goto(`${baseURL}route=account/register`);
-    // const RegisterLink = new UrlLink(page)
-    // await RegisterLink.LinkRegister();
+   
     const apply = new ApplyPage(page);
     await page.goto("https://ecommerce-playground.lambdatest.io/index.php?route=account/register")
     await apply.typeFirstName("Patrick");
@@ -40,8 +37,9 @@ test.describe("Application Form", function () {
     await access.LoginButton();
     const AccountTitle = await page.title();
     expect(AccountTitle).toEqual("Account Login");
-    // expect (await page.title()).toBe("My Account");   
-    await time.Time();
+    // expect (await page.title()).toBe("My Account"); 
+    await page.waitForTimeout(5000);
+    // await time.Time();
   });
   test("Access in Side", async ({ page, baseURL }) => {
     
