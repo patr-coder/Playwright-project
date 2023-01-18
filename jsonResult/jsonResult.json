@@ -78,12 +78,12 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 8072,
+                  "duration": 6777,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-01-18T17:02:51.777Z",
+                  "startTime": "2023-01-18T17:30:24.720Z",
                   "attachments": [
                     {
                       "name": "video",
@@ -126,12 +126,12 @@
                 {
                   "workerIndex": 1,
                   "status": "passed",
-                  "duration": 13620,
+                  "duration": 11847,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-01-18T17:02:51.780Z",
+                  "startTime": "2023-01-18T17:30:24.718Z",
                   "attachments": [
                     {
                       "name": "video",
@@ -174,12 +174,12 @@
                 {
                   "workerIndex": 2,
                   "status": "passed",
-                  "duration": 10928,
+                  "duration": 9457,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-01-18T17:02:51.791Z",
+                  "startTime": "2023-01-18T17:30:24.724Z",
                   "attachments": [
                     {
                       "name": "video",

@@ -5,7 +5,7 @@ import ApplyPage from "../Pages/Apply";
 import DashboardPage from "../Pages/Dashboard";
 import UrlLink from "../Pages/Url";
 
-const Email = "patrick@2000095.org";
+const Email = "patrick@20000951.org";
 const Password = "password";
 // test.describe("Application Form", function () {
   test("Apply for first time formality", async ({ page, baseURL }) => {
