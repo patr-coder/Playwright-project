@@ -5,13 +5,13 @@ import ApplyPage from "../Pages/Apply";
 import DashboardPage from "../Pages/Dashboard";
 import UrlLink from "../Pages/Url";
 
-const Email = "patrick@200009.org";
+const Email = "patrick@2000095.org";
 const Password = "password";
 // test.describe("Application Form", function () {
   test("Apply for first time formality", async ({ page, baseURL }) => {
    
     const apply = new ApplyPage(page);
-    // await page.goto("https://ecommerce-playground.lambdatest.io/index.php?route=account/register")
+    await page.goto("https://ecommerce-playground.lambdatest.io/index.php?route=account/register")
     await page.goto(`${baseURL}route=account/register`);
     await apply.typeFirstName("Patrick");
     await apply.typeRenterName("roboco-op");
@@ -27,8 +27,8 @@ const Password = "password";
 
   test("Access In ", async ({ page, baseURL }) => {
 
-    // await page.goto("https://ecommerce-playground.lambdatest.io/index.php?route=account/login")
-    await page.goto(`${baseURL}route=account/login`);
+    await page.goto("https://ecommerce-playground.lambdatest.io/index.php?route=account/login")
+    // await page.goto(`${baseURL}route=account/login`);
     const time = new ApplyPage(page);
     const access = new AccessPage(page);
     const LoginLink = new UrlLink(page)
@@ -44,8 +44,8 @@ const Password = "password";
     // await time.Time();
   });
   test("Access in Side", async ({ page, baseURL }) => {
-    // await page.goto("https://ecommerce-playground.lambdatest.io/index.php?route=account/login")
-    await page.goto(`${baseURL}route=account/account`);
+    await page.goto("https://ecommerce-playground.lambdatest.io/index.php?route=account/login")
+    // await page.goto(`${baseURL}route=account/account`);
     const access = new AccessPage(page);
     const add = new AddBasketPage(page);
     const dashboard = new DashboardPage(page);
